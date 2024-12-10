@@ -2,9 +2,20 @@ import Card from "./components/card";
 import { useState, useEffect } from "react";
 import Jokes from "./components/joke";
 
+interface Character{
+id: number;
+fullName: string;
+family:string;
+imageUrl: string;
+}
+
+interface Joke{
+  setup?:string;
+  punchline?:string;
+}
 function App() {
-  const [characters, setCharacters] = useState([]);
-  const [joke, setJoke] = useState({});
+  const [characters, setCharacters] = useState<Character[]>([]);
+  const [joke, setJoke] = useState<Joke>({});
   useEffect(() => {
     const getData = async () => {
       const response = await fetch("https://thronesapi.com/api/v2/Characters");

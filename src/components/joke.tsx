@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./joke.css";
 
 type Props = {
-  setup: string;
-  punchline: string;
+  setup?: string;
+  punchline?: string;
 };
 
 const Jokes = ({ setup, punchline }: Props) => {
