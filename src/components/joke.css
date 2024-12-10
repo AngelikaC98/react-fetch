@@ -1,0 +1,85 @@
+.bg {
+    background-color: rgb(247, 247, 239);
+    height: 250px;
+    justify-content: center;
+}
+
+.jokePlace {
+    flex-direction: column;
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+
+.jokeButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: gray;
+    color: white;
+    border: 2px solid;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.jokeButton:hover {
+    background-color: rgb(166, 163, 163);
+    color: white;
+    border-color: gray;
+    border: 2px solid
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalContent {
+    background: rgb(247, 247, 239);
+    padding: 30px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.closeModal {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: gray;
+    color: white;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+    border-color: gray;
+
+}
+
+.closeModal:hover {
+    background-color: rgb(166, 163, 163);
+    color: white;
+    border-color: gray;
+    border: 2px solid;
+
+}
